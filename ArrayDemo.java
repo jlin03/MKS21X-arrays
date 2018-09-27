@@ -7,6 +7,8 @@ public class ArrayDemo {
 		System.out.println(countZeros2D(test2d));
 		fill2D(test2d);
 		printArray(test2d);
+		fill2DCopy(test2d);
+		printArray(test2d);
 	}
 	
 	public static void printArray(int[]ary) {
@@ -56,4 +58,21 @@ public class ArrayDemo {
 		}
 	
 	}
+
+	public static void fill2DCopy(int[][] vals) {
+                for(int d1 = 0; d1 < vals.length; d1++) {
+                        for(int d2 = 0; d2 < vals[d1].length; d2++) {
+                                if(vals[d1][d2] < 0) {
+                                        vals[d1][d2] = 3;
+                                }
+                                else {
+                                        vals[d1][d2] = 1;
+                                }
+                        }
+                }
+
+        }
+
+
+
 }
