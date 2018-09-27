@@ -2,13 +2,16 @@ public class ArrayDemo {
 	public static void main(String[] args) {
 		int[] test = new int[10];
 		int[][] test2d = new int[10][10];
+		int[][] testfill2dcopy = new int[5][5];
+		testfill2dcopy[1][4] = -2;
+		testfill2dcopy[3][2] = -5;
 		printArray(test);
 		printArray(test2d);
 		System.out.println(countZeros2D(test2d));
 		fill2D(test2d);
 		printArray(test2d);
-		fill2DCopy(test2d);
-		printArray(test2d);
+		fill2DCopy(testfill2dcopy);
+		printArray(testfill2dcopy);
 	}
 	
 	public static void printArray(int[]ary) {
